@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Ahrmerd\LaraWizard\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaraWizardCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'larawizard';
 
     public $description = 'My command';
 

@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "ahrmerd/larawizard",
+    "description": "LaraWizard magically enhances your Laravel development experience. Effortlessly generate models, controllers, and more using its intuitive CLI tool. Crafted for CRUD operations, LaraWizard's general controller template simplifies standard actions, while allowing magical extensibility. Define data presentation, filters, and sorts in models for a seamless Laravel journey guided by the magic of LaraWizard.",
     "keywords": [
-        ":vendor_name",
+        "ahrmerd",
         "laravel",
-        ":package_slug"
+        "larawizard"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/ahrmerd/larawizard",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Ahmed Mahmood",
+            "email": "ahmedmahmood208@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,19 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Ahrmerd\\LaraWizard\\": "src/",
+            "Ahrmerd\\LaraWizard\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Ahrmerd\\LaraWizard\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-larawizard --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Ahrmerd\\LaraWizard\\LaraWizardServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaraWizard": "Ahrmerd\\LaraWizard\\Facades\\LaraWizard"
             }
         }
     },
